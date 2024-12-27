@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Potter - Cloud Engineer</title>
+    <style>
+        :root {
+            --primary-color: #e4e4e4;
+            --secondary-color: #a0aec0;
+            --accent-color: #3182ce;
+            --background-color: #121212;
+            --card-background: #1e1e1e;
+            --hover-color: #2a2a2a;
+            --border-color: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background-color: var(--background-color);
+        }
+
+        header {
+            background-color: var(--card-background);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 4rem 0;
+            padding: 2rem;
+            background-color: var(--card-background);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .intro {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 2rem auto;
+            display: block;
+            background-color: var(--card-background);
+            border: 2px solid var(--border-color);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .skill-category {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .skill {
+            background-color: var(--card-background);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+        .skill:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project {
+            background-color: var(--hover-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+
+        .experience {
+            margin-bottom: 2rem;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-title {
+            color: var(--accent-color);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-company {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-date {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .contact a:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--card-background);
+            color: var(--secondary-color);
+            margin-top: 4rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+                margin: 2rem 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Rest of the HTML content remains the same -->
+    <header>
+        <h1>Kyle Potter</h1>
+        <p>Senior Platform Engineer | Cloud Infrastructure Specialist</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <img src="/api/placeholder/200/200" alt="Kyle Potter" class="profile-img">
+            <h2>About Me</h2>
+            <p>Platform Engineer with extensive experience in cloud infrastructure and DevOps practices. Specializing in AWS, Kubernetes, and infrastructure automation. Proven track record of implementing scalable solutions and driving infrastructure modernization initiatives. Currently focused on cloud-native technologies and GitOps practices at Cox Automotive.</p>
+        </section>
+
+        <section>
+            <h2>Technical Expertise</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Cloud & Infrastructure</h3>
+                    <div class="skills">
+                        <span class="skill">AWS</span>
+                        <span class="skill">Terraform</span>
+                        <span class="skill">Infrastructure as Code</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">Go</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Container & Orchestration</h3>
+                    <div class="skills">
+                        <span class="skill">Kubernetes</span>
+                        <span class="skill">Docker</span>
+                        <span class="skill">EKS</span>
+                        <span class="skill">Helm</span>
+                        <span class="skill">ArgoCD</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <div class="skills">
+                        <span class="skill">GitOps</span>
+                        <span class="skill">CI/CD</span>
+                        <span class="skill">Jenkins</span>
+                        <span class="skill">GitHub</span>
+                        <span class="skill">Monitoring & Observability</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            <div class="experience">
+                <div class="experience-item">
+                    <div class="experience-title">Senior Platform Engineer</div>
+                    <div class="experience-company">Cox Automotive</div>
+                    <div class="experience-date">2021 - Present</div>
+                    <p>Lead engineer for cloud infrastructure and Kubernetes platforms, focusing on automation, security, and scalability. Key contributor to the company's cloud-native transformation initiatives.</p>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-title">Cloud Engineer</div>
+                    <div class="experience-company">Cox Automotive</div>
+                    <div class="experience-date">2019 - 2021</div>
+                    <p>Specialized in AWS infrastructure management, CI/CD implementation, and automation solutions. Played a crucial role in modernizing deployment practices and improving infrastructure reliability.</p>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-title">DevOps Engineer</div>
+                    <div class="experience-company">Cox Automotive</div>
+                    <div class="experience-date">2018 - 2019</div>
+                    <p>Focused on infrastructure automation, CI/CD pipeline development, and implementing DevOps best practices across teams.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Kubernetes Platform Management</h3>
+                    <p>Led the development and management of enterprise Kubernetes platforms, implementing GitOps practices and automating cluster operations.</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Kubernetes, AWS EKS, ArgoCD, Terraform
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Cloud Infrastructure Automation</h3>
+                    <p>Designed and implemented comprehensive infrastructure automation solutions using Terraform and AWS services.</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> AWS, Terraform, Python, GitOps
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>DevOps Pipeline Modernization</h3>
+                    <p>Modernized CI/CD pipelines and implemented automated testing and deployment processes for cloud-native applications.</p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Jenkins, Docker, Kubernetes, GitHub Actions
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>Interested in cloud infrastructure or platform engineering? Let's connect!</p>
+            <div style="margin-top: 1rem;">
+                <a href="https://www.linkedin.com/in/kylepotter92/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/k-pot" target="_blank">GitHub</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kyle Potter. All rights reserved.</p>
+    </footer>
+</body>
+</html>
