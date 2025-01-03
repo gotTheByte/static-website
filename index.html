@@ -6,49 +6,67 @@
     <title>Kyle Potter - Senior Cloud Engineer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <style>
+        /* Force dark mode */
+        body {
+            background-color: #09090b;
+            color: #f4f4f5;
+        }
+        .bg-dark {
+            background-color: #18181b;
+        }
+        .border-dark {
+            border-color: #27272a;
+        }
+    </style>
 </head>
-<body class="min-h-screen bg-zinc-950 text-zinc-100">
+<body class="min-h-screen">
     <!-- Navigation -->
-    <nav class="bg-zinc-900 border-b border-zinc-800">
+    <nav class="bg-dark border-b border-dark">
         <div class="max-w-7xl mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
-                <h1 class="text-2xl font-bold text-zinc-100">Kyle Potter</h1>
-                <div class="space-x-6">
-                    <a href="about.html" class="text-zinc-400 hover:text-zinc-100">About</a>
-                    <a href="blog.html" class="text-zinc-400 hover:text-zinc-100">Blog</a>
+                <div class="flex items-center font-mono text-xl">
+                    <span class="text-green-500">$</span>
+                    <span class="text-white mx-1">./</span>
+                    <span class="text-blue-500 font-bold">kyle_potter</span>
+                    <span class="text-green-500 ml-1">*</span>
+                </div>
+                <div class="space-x-6 font-mono">
+                    <a href="about.html" class="text-gray-400 hover:text-white"><span class="text-green-500">$</span> whoami</a>
+                    <a href="blog.html" class="text-gray-400 hover:text-white"><span class="text-green-500">$</span> /var/log</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section with Profile Photo -->
-    <div class="bg-zinc-900">
+    <div class="bg-dark">
         <div class="max-w-7xl mx-auto px-4 py-16">
             <div class="text-center">
                 <div class="mb-8 flex justify-center">
-                    <div class="rounded-full overflow-hidden w-48 h-48 border-4 border-zinc-700">
-                        <img src="images/profile.jpg" alt="Profile" class="w-full h-full object-cover">
+                    <div class="rounded-full overflow-hidden w-48 h-48 border-4 border-dark">
+                        <img src="./images/profile.jpg" alt="Profile" class="w-full h-full object-cover">
                     </div>
                 </div>
-                <h1 class="text-4xl font-bold text-zinc-100 sm:text-5xl">
+                <h1 class="text-4xl font-bold sm:text-5xl">
                     Senior Cloud Engineer
                 </h1>
-                <p class="mt-4 text-xl text-zinc-400">
+                <p class="mt-4 text-xl text-gray-400">
                     Specializing in Cloud Infrastructure, Security and DevSecOps
                 </p>
                 <div class="flex justify-center space-x-6 mt-8">
                     <a href="https://linkedin.com/in/kylepotter92" target="_blank" rel="noopener noreferrer" 
-                       class="text-zinc-400 hover:text-blue-500 transition-colors">
+                       class="text-gray-400 hover:text-blue-500 transition-colors">
                         <i data-feather="linkedin" class="w-8 h-8"></i>
                         <span class="sr-only">LinkedIn Profile</span>
                     </a>
                     <a href="https://github.com/gotTheByte" target="_blank" rel="noopener noreferrer"
-                       class="text-zinc-400 hover:text-blue-500 transition-colors">
+                       class="text-gray-400 hover:text-blue-500 transition-colors">
                         <i data-feather="github" class="w-8 h-8"></i>
                         <span class="sr-only">GitHub Profile</span>
                     </a>
                     <a href="mailto:kylepotter0902@gmail.com" 
-                       class="text-zinc-400 hover:text-blue-500 transition-colors"
+                       class="text-gray-400 hover:text-blue-500 transition-colors"
                        title="kylepotter0902@gmail.com">
                         <svg viewBox="0 0 24 24" class="w-8 h-8" fill="currentColor">
                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -60,11 +78,9 @@
         </div>
     </div>
 
-
-
     <!-- Footer -->
-    <footer class="bg-zinc-950 py-8 border-t border-zinc-800">
-        <div class="max-w-7xl mx-auto px-4 text-center text-zinc-400">
+    <footer class="py-8 border-t border-dark mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-400">
             © 2024 · Built with HTML and Tailwind CSS
         </div>
     </footer>
