@@ -3,123 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyle Potter - Cloud Engineer</title>
-    <link href="styles/theme.css" type="text/css" rel="stylesheet">
+    <title>Kyle Potter - Senior Cloud Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
 </head>
-<body>
-    <!-- Rest of the HTML content remains the same -->
-    <header>
-        <h1>Kyle Potter</h1>
-        <p>Senior Cloud Engineer | Site Reliability Engineer | DevOps Enjoyer</p>
-    </header>
-
-    <div class="container">
-        <section class="intro">
-            <img src="./content/unnamed.jpg" alt="Kyle Potter" class="profile-img">
-            <h2>About Me</h2>
-            <p>Cloud Engineer with extensive experience in Site Reliability and DevOps practices. Specializing in AWS, cloud native applications, and infrastructure automation. Proven track record of implementing scalable solutions and driving infrastructure modernization initiatives. Currently focused on FedRAMP and security best practices in GovCloud at Coalfire.</p>
-        </section>
-
-        <section>
-            <h2>Technical Expertise</h2>
-            <div class="skills">
-                <div class="skill-category">
-                    <h3>Cloud & Infrastructure</h3>
-                    <div class="skills">
-                        <span class="skill">AWS</span>
-                        <span class="skill">Terraform</span>
-                        <span class="skill">Infrastructure as Code</span>
-                        <span class="skill">Python</span>
-                        <span class="skill">Ansible</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Container & Orchestration</h3>
-                    <div class="skills">
-                        <span class="skill">Kubernetes</span>
-                        <span class="skill">Docker</span>
-                        <span class="skill">EKS</span>
-                        <span class="skill">Helm</span>
-                        <span class="skill">ArgoCD</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>DevOps & Tools</h3>
-                    <div class="skills">
-                        <span class="skill">GitOps</span>
-                        <span class="skill">CI/CD</span>
-                        <span class="skill">Jenkins</span>
-                        <span class="skill">Monitoring & Observability</span>
-                    </div>
+<body class="min-h-screen bg-zinc-950 text-zinc-100">
+    <!-- Navigation -->
+    <nav class="bg-zinc-900 border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-zinc-100">Kyle Potter</h1>
+                <div class="space-x-6">
+                    <a href="about.html" class="text-zinc-400 hover:text-zinc-100">About</a>
+                    <a href="blog.html" class="text-zinc-400 hover:text-zinc-100">Blog</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section>
-            <h2>Professional Experience</h2>
-            <div class="experience">
-                <div class="experience-item">
-                    <div class="experience-title">Senior Engineer, Cloud Services</div>
-                    <div class="experience-company">Coalfire</div>
-                    <div class="experience-date">2024 - Present</div>
-                    <p>Designed cloud infrastructure with Terraform in AWS GovCloud for multiple clients, ensuring federal security requirement and FedRAMP security best practice.</p>
-                    <p>Configured and deployed Site-to-Site VPN connections for seamless connectivity within hybrid cloud environments, allowing cross-cloud communication for monitoring components such as Azure Sentinel</p>
-                    <p>Created detailed cloud architecture diagrams and network topologies for clients, facilitating clear depiction of infrastructure, integrations, and cloud services.</p>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-title">Senior Site Reliability Engineer</div>
-                    <div class="experience-company">Coalfire</div>
-                    <div class="experience-date">2023 - 2024</div>
-                    <p>Specialized in AWS infrastructure management, CI/CD implementation, and automation solutions. Played a crucial role in modernizing deployment practices and improving infrastructure reliability.</p>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-title">Senior Cloud Engineer</div>
-                    <div class="experience-company">Cox Automotive</div>
-                    <div class="experience-date">2018 - 2019</div>
-                    <p>Focused on infrastructure automation, CI/CD pipeline development, and implementing DevOps best practices across teams.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Featured Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Kubernetes Platform Management</h3>
-                    <p>Led the development and management of enterprise Kubernetes platforms, implementing GitOps practices and automating cluster operations.</p>
-                    <div class="tech-stack">
-                        <strong>Tech Stack:</strong> Kubernetes, AWS EKS, ArgoCD, Terraform
+    <!-- Hero Section with Profile Photo -->
+    <div class="bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <div class="text-center">
+                <div class="mb-8 flex justify-center">
+                    <div class="rounded-full overflow-hidden w-48 h-48 border-4 border-zinc-700">
+                        <img src="images/profile.jpg" alt="Profile" class="w-full h-full object-cover">
                     </div>
                 </div>
-                <div class="project">
-                    <h3>Cloud Infrastructure Automation</h3>
-                    <p>Designed and implemented comprehensive infrastructure automation solutions using Terraform and AWS services.</p>
-                    <div class="tech-stack">
-                        <strong>Tech Stack:</strong> AWS, Terraform, Python, GitOps
-                    </div>
-                </div>
-                <div class="project">
-                    <h3>DevOps Pipeline Modernization</h3>
-                    <p>Modernized CI/CD pipelines and implemented automated testing and deployment processes for cloud-native applications.</p>
-                    <div class="tech-stack">
-                        <strong>Tech Stack:</strong> Jenkins, Docker, Kubernetes
-                    </div>
+                <h1 class="text-4xl font-bold text-zinc-100 sm:text-5xl">
+                    Senior Cloud Engineer
+                </h1>
+                <p class="mt-4 text-xl text-zinc-400">
+                    Specializing in Cloud Infrastructure, Security and DevSecOps
+                </p>
+                <div class="flex justify-center space-x-6 mt-8">
+                    <a href="https://linkedin.com/in/kylepotter92" target="_blank" rel="noopener noreferrer" 
+                       class="text-zinc-400 hover:text-blue-500 transition-colors">
+                        <i data-feather="linkedin" class="w-8 h-8"></i>
+                        <span class="sr-only">LinkedIn Profile</span>
+                    </a>
+                    <a href="https://github.com/gotTheByte" target="_blank" rel="noopener noreferrer"
+                       class="text-zinc-400 hover:text-blue-500 transition-colors">
+                        <i data-feather="github" class="w-8 h-8"></i>
+                        <span class="sr-only">GitHub Profile</span>
+                    </a>
+                    <a href="mailto:kylepotter0902@gmail.com" 
+                       class="text-zinc-400 hover:text-blue-500 transition-colors"
+                       title="kylepotter0902@gmail.com">
+                        <svg viewBox="0 0 24 24" class="w-8 h-8" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <span class="sr-only">Email me</span>
+                    </a>
                 </div>
             </div>
-        </section>
-
-        <section class="contact">
-            <h2>Get in Touch</h2>
-            <p>Interested in cloud infrastructure or platform engineering? Let's connect!</p>
-            <div style="margin-top: 1rem;">
-                <a href="https://www.linkedin.com/in/kylepotter92/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/gotTheByte" target="_blank">GitHub</a>
-            </div>
-        </section>
+        </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Kyle Potter. All rights reserved.</p>
+
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 py-8 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 text-center text-zinc-400">
+            © 2024 · Built with HTML and Tailwind CSS
+        </div>
     </footer>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace()
+    </script>
 </body>
 </html>

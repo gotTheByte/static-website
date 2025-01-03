@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Kyle Potter</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+</head>
+<body class="min-h-screen bg-zinc-950 text-zinc-100 flex flex-col">
+    <!-- Navigation -->
+    <nav class="bg-zinc-900 border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-zinc-100">Kyle Potter</a>
+                <div class="space-x-6">
+                    <a href="about.html" class="text-zinc-100">About</a>
+                    <a href="blog.html" class="text-zinc-400 hover:text-zinc-100">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <main class="flex-grow">
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-zinc-100 mb-8">About Me</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
+                        <i data-feather="cloud" class="w-8 h-8 text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-bold text-zinc-100 mb-2">Cloud Expertise</h3>
+                        <p class="text-zinc-400">
+                            Experienced in designing and implementing secure cloud infrastructure across AWS, Azure, and GCP.
+                            Specialized in building scalable and secure cloud architectures that meet industry compliance standards.
+                        </p>
+                    </div>
+
+                    <div class="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
+                        <i data-feather="shield" class="w-8 h-8 text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-bold text-zinc-100 mb-2">Cyber Security</h3>
+                        <p class="text-zinc-400">
+                            Specialized in cloud security architecture, compliance frameworks, and security automation.
+                            Expert in implementing Zero Trust architectures and securing cloud-native applications.
+                        </p>
+                    </div>
+
+                    <div class="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
+                        <i data-feather="terminal" class="w-8 h-8 text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-bold text-zinc-100 mb-2">DevSecOps</h3>
+                        <p class="text-zinc-400">
+                            Expert in integrating security practices into CI/CD pipelines and infrastructure as code.
+                            Strong focus on automated security testing and continuous compliance monitoring.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-zinc-900 border border-zinc-800 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-zinc-100 mb-4">Professional Journey</h3>
+                    <p class="text-zinc-400 mb-4">
+                        As a Senior Cloud Engineer at Coalfire, I focus on helping organizations build and maintain secure cloud infrastructure. 
+                        My work involves designing security architectures, implementing DevSecOps practices, and ensuring compliance with industry standards.
+                    </p>
+                    <p class="text-zinc-400">
+                        I'm passionate about sharing knowledge and contributing to the cloud security community through speaking engagements, 
+                        technical writing, and open-source contributions.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 py-8 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 text-center text-zinc-400">
+            © 2024 · Built with HTML and Tailwind CSS
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace()
+    </script>
+</body>
+</html>
