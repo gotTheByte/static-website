@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Kyle Potter</title>
+    <title>Kyle Potter - Senior Cloud Engineer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
     <style>
@@ -18,163 +18,306 @@
         .border-dark {
             border-color: #27272a;
         }
+        .text-accent {
+            color: #3b82f6;
+        }
+        .skill-badge {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
-<body class="min-h-screen flex flex-col">
+<body class="min-h-screen">
     <!-- Navigation -->
-    <nav class="bg-dark border-b border-dark">
+    <nav class="bg-dark border-b border-dark sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
-                <a href="index.html" class="flex items-center font-mono text-xl">
+                <div class="flex items-center font-mono text-xl">
                     <span class="text-green-500">$</span>
                     <span class="text-white mx-1">./</span>
                     <span class="text-blue-500 font-bold">kyle_potter</span>
                     <span class="text-green-500 ml-1">*</span>
-                </a>
+                </div>
                 <div class="space-x-6 font-mono">
-                    <a href="about.html" class="text-white border-b-2 border-blue-500"><span class="text-green-500">$</span> whoami</a>
+                    <a href="#home" class="text-gray-400 hover:text-white"><span class="text-green-500">$</span> ~/home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white"><span class="text-green-500">$</span> whoami</a>
                     <a href="blog.html" class="text-gray-400 hover:text-white"><span class="text-green-500">$</span> /var/log</a>
                 </div>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section with Profile Photo -->
+    <section id="home" class="bg-dark">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <div class="text-center">
+                <div class="mb-8 flex justify-center">
+                    <div class="rounded-full overflow-hidden w-48 h-48 border-4 border-dark">
+                        <img src="./images/profile.jpg" alt="Profile" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <h1 class="text-4xl font-bold sm:text-5xl mb-2">
+                    Kyle Potter
+                </h1>
+                <h2 class="text-3xl text-blue-400 mb-4">
+                    Senior Cloud Engineer
+                </h2>
+                <p class="mt-4 text-xl text-gray-400">
+                    Specializing in Cloud Infrastructure, Security and DevSecOps
+                </p>
+                <div class="flex justify-center space-x-6 mt-8">
+                    <a href="https://linkedin.com/in/kylepotter92" target="_blank" rel="noopener noreferrer" 
+                       class="text-gray-400 hover:text-blue-500 transition-colors">
+                        <i data-feather="linkedin" class="w-8 h-8"></i>
+                        <span class="sr-only">LinkedIn Profile</span>
+                    </a>
+                    <a href="https://github.com/gotTheByte" target="_blank" rel="noopener noreferrer"
+                       class="text-gray-400 hover:text-blue-500 transition-colors">
+                        <i data-feather="github" class="w-8 h-8"></i>
+                        <span class="sr-only">GitHub Profile</span>
+                    </a>
+                    <a href="mailto:kylepotter0902@gmail.com" 
+                       class="text-gray-400 hover:text-blue-500 transition-colors"
+                       title="kylepotter0902@gmail.com">
+                        <svg viewBox="0 0 24 24" class="w-8 h-8" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <span class="sr-only">Email me</span>
+                    </a>
+                </div>
+                <div class="mt-12">
+                    <a href="#about" class="inline-flex items-center text-gray-400 hover:text-white transition-colors font-mono">
+                        <span class="text-green-500">$</span>
+                        <span class="ml-2">cat ./about.md</span>
+                        <i data-feather="chevron-down" class="w-5 h-5 ml-2 animate-bounce"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
-    <main class="flex-grow">
-        <section class="py-16">
-            <div class="max-w-7xl mx-auto px-4 space-y-8">
-                <!-- Main Whoami -->
-                <div class="inline-flex items-center bg-[#0d0d0d] rounded-lg p-4 mb-8 font-mono border border-dark text-xl">
-                    <span class="text-green-500">kyle@portfolio</span>
-                    <span class="text-white mx-1">:</span>
-                    <span class="text-blue-500">~/about</span>
-                    <span class="text-white mx-1">$</span>
-                    <span class="text-white ml-1">whoami</span>
-                    <span class="ml-2 w-3 h-6 bg-white animate-pulse"></span>
+    <section id="about" class="max-w-4xl mx-auto px-4 py-12">
+        <!-- Professional Summary -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Professional Summary</h2>
+            <div class="bg-black p-6 rounded-lg border border-gray-700 font-mono text-sm">
+                <div class="flex items-center mb-2">
+                    <span class="text-green-500">kyle@cloudops</span>
+                    <span class="text-white">:</span>
+                    <span class="text-blue-500">~</span>
+                    <span class="text-white">$ cat /etc/profile.d/summary.sh</span>
                 </div>
-
-                <!-- Professional Journey Section -->
-                <div class="bg-[#0d0d0d] rounded-lg p-6 font-mono border border-dark mb-8">
-                    <div class="inline-flex items-center mb-6">
-                        <span class="text-green-500">kyle@portfolio</span>
-                        <span class="text-white mx-1">:</span>
-                        <span class="text-blue-500">~/journey</span>
-                        <span class="text-white mx-1">$</span>
-                        <span class="text-white ml-1">cat summary.md</span>
-                    </div>
-
-                    <div class="ml-4 mb-4 text-gray-400">
-                        I focus on helping organizations build and maintain secure cloud infrastructure. 
-                        My work involves designing security architectures, implementing DevSecOps practices, 
-                        and ensuring compliance with industry standards.
-                    </div>
-
-                    <div class="ml-4 text-gray-400">
-                        I'm passionate about sharing knowledge and contributing to the cloud security community 
-                        through speaking engagements, technical writing, and open-source contributions.
-                    </div>
-
-                    <span class="inline-block mt-4 ml-4 w-2 h-4 bg-gray-400 animate-pulse"></span>
+                <div class="text-gray-300 leading-relaxed">
+                    <span class="text-gray-500">#!/bin/bash</span><br/>
+                    <span class="text-gray-500"># Kyle Potter - Professional Profile v2.0</span><br/>
+                    <span class="text-gray-500"># Last Updated: 2025</span><br/><br/>
+                    
+                    <span class="text-yellow-400">export</span> <span class="text-white">ROLE=</span><span class="text-green-400">"Technical Manager | Senior Site Reliability Engineer"</span><br/>
+                    <span class="text-yellow-400">export</span> <span class="text-white">EXPERIENCE=</span><span class="text-green-400">"8+ years"</span><br/>
+                    <span class="text-yellow-400">export</span> <span class="text-white">SPECIALIZATION=</span><span class="text-green-400">"Cloud Infrastructure | Security | DevSecOps"</span><br/><br/>
+                    
+                    <span class="text-gray-500"># Core Competencies</span><br/>
+                    <span class="text-yellow-400">declare -a</span> <span class="text-white">EXPERTISE=(</span><br/>
+                    <span class="text-green-400 ml-4">"FedRAMP and IL5/DoD compliant environment design"</span><br/>
+                    <span class="text-green-400 ml-4">"AWS services architecture and optimization"</span><br/>
+                    <span class="text-green-400 ml-4">"Infrastructure as Code (Terraform)"</span><br/>
+                    <span class="text-green-400 ml-4">"Security compliance automation"</span><br/>
+                    <span class="text-green-400 ml-4">"Linux administration and container orchestration"</span><br/>
+                    <span class="text-green-400 ml-4">"CI/CD pipeline development"</span><br/>
+                    <span class="text-green-400 ml-4">"NIST security standards implementation"</span><br/>
+                    <span class="text-green-400 ml-4">"STIG enforcement across multi-account AWS"</span><br/>
+                    <span class="text-white">)</span><br/><br/>
+                    
+                    <span class="text-gray-500"># Current Certification</span><br/>
+                    <span class="text-yellow-400">echo</span> <span class="text-green-400">"[✓] Google Professional Cloud Security Engineer"</span><br/><br/>
+                    
+                    <span class="text-gray-500"># Mission Statement</span><br/>
+                    <span class="text-yellow-400">printf</span> <span class="text-green-400">"%s\n"</span> <span class="text-cyan-400">"Driving successful cloud transformations through strategic"</span> \<br/>
+                    <span class="text-cyan-400 ml-8">"leadership and innovative technical solutions for enterprise"</span> \<br/>
+                    <span class="text-cyan-400 ml-8">"and government clients."</span>
                 </div>
+                <div class="flex items-center mt-4">
+                    <span class="text-green-500">kyle@cloudops</span>
+                    <span class="text-white">:</span>
+                    <span class="text-blue-500">~</span>
+                    <span class="text-white">$ </span>
+                    <span class="inline-block w-2 h-4 bg-gray-400 animate-pulse"></span>
+                </div>
+            </div>
+        </div>
 
-                <div class="bg-[#0d0d0d] rounded-lg p-6 font-mono border border-dark">
-                    <!-- Cloud Section -->
-                    <div class="inline-flex items-center mb-4">
-                        <span class="text-green-500">kyle@portfolio</span>
-                        <span class="text-white mx-1">:</span>
-                        <span class="text-blue-500">~/expertise</span>
-                        <span class="text-white mx-1">$</span>
-                        <span class="text-white ml-1">ls -la /cloud/providers/</span>
-                    </div>
-                
-                    <div class="ml-4 mb-6">
-                        <div class="ml-4 text-blue-400 mb-1">- aws</div>
-                        <div class="ml-4 text-blue-400 mb-1">- azure</div>
-                        <div class="ml-4 text-blue-400 mb-4">- gcp</div>
-                    </div>
-                
-                    <div class="inline-flex items-center mb-4">
-                        <span class="text-green-500">kyle@portfolio</span>
-                        <span class="text-white mx-1">:</span>
-                        <span class="text-blue-500">~/expertise</span>
-                        <span class="text-white mx-1">$</span>
-                        <span class="text-white ml-1">cat cloud/skills.txt</span>
-                    </div>
-                
-                    <div class="ml-4 mb-6">
-                        <div class="text-gray-400 mb-2">• Infrastructure design and implementation</div>
-                        <div class="text-gray-400 mb-2">• Security architecture</div>
-                        <div class="text-gray-400 mb-2">• Compliance frameworks</div>
-                        <div class="text-gray-400 mb-4">• Scalable systems</div>
-                    </div>
-                
-                    <!-- Security Section -->
-                    <div class="inline-flex items-center mb-4">
-                        <span class="text-green-500">kyle@portfolio</span>
-                        <span class="text-white mx-1">:</span>
-                        <span class="text-blue-500">~/expertise</span>
-                        <span class="text-white mx-1">$</span>
-                        <span class="text-white ml-1">ls -la security/specializations/</span>
-                    </div>
-                
-                    <div class="ml-4 mb-6">
-                        <div class="ml-4 text-blue-400 mb-1">- cloud_security</div>
-                        <div class="ml-4 text-blue-400 mb-1">- zero_trust</div>
-                        <div class="ml-4 text-blue-400 mb-4">- compliance</div>
-                    </div>
-                
-                    <div class="inline-flex items-center mb-4">
-                        <span class="text-green-500">kyle@portfolio</span>
-                        <span class="text-white mx-1">:</span>
-                        <span class="text-blue-500">~/expertise</span>
-                        <span class="text-white mx-1">$</span>
-                        <span class="text-white ml-1">cat /security/focus.txt</span>
-                    </div>
-                
-                    <div class="ml-4 mb-6">
-                        <div class="text-gray-400 mb-2">• Cloud security architecture</div>
-                        <div class="text-gray-400 mb-2">• Security automation</div>
-                        <div class="text-gray-400 mb-2">• Zero Trust implementation</div>
-                        <div class="text-gray-400 mb-4">• Application security</div>
-                    </div>
-                
-                    <!-- DevSecOps Section -->
-                    <div class="inline-flex items-center mb-4">
-                        <span class="text-green-500">kyle@portfolio</span>
-                        <span class="text-white mx-1">:</span>
-                        <span class="text-blue-500">~/expertise</span>
-                        <span class="text-white mx-1">$</span>
-                        <span class="text-white ml-1">ls -la devsecops/practices/</span>
-                    </div>
-                
-                    <div class="ml-4 mb-6">
-                        <div class="ml-4 text-blue-400 mb-1">- ci_cd</div>
-                        <div class="ml-4 text-blue-400 mb-1">- iac</div>
-                        <div class="ml-4 text-blue-400 mb-4">- automation</div>
-                    </div>
-                
-                    <div class="inline-flex items-center mb-4">
-                        <span class="text-green-500">kyle@portfolio</span>
-                        <span class="text-white mx-1">:</span>
-                        <span class="text-blue-500">~/expertise</span>
-                        <span class="text-white mx-1">$</span>
-                        <span class="text-white ml-1">cat devsecops/skills.txt</span>
-                    </div>
-                
-                    <div class="ml-4">
-                        <div class="text-gray-400 mb-2">• CI/CD pipeline security</div>
-                        <div class="text-gray-400 mb-2">• Infrastructure as Code</div>
-                        <div class="text-gray-400 mb-2">• Security testing automation</div>
-                        <div class="text-gray-400">• Compliance monitoring</div>
+        <!-- Current Role -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Current Position</h2>
+            <div class="bg-black p-6 rounded-lg border border-gray-700 font-mono text-sm">
+                <div class="flex items-center mb-2">
+                    <span class="text-green-500">kyle@cloudops</span>
+                    <span class="text-white">:</span>
+                    <span class="text-blue-500">~</span>
+                    <span class="text-white">$ journalctl -u current-role --no-pager</span>
+                </div>
+                <div class="text-gray-300 leading-relaxed">
+                    <span class="text-yellow-400">-- Journal begins at Jul 2025 --</span><br/>
+                    <span class="text-cyan-400">[INFO]</span> Starting role: <span class="text-green-400">Technical Manager - SRE</span><br/>
+                    <span class="text-cyan-400">[INFO]</span> Organization: <span class="text-green-400">Coalfire</span><br/>
+                    <span class="text-cyan-400">[INFO]</span> Location: <span class="text-green-400">Chicago, IL (Remote)</span><br/>
+                    <span class="text-cyan-400">[INFO]</span> Start Date: <span class="text-green-400">July 2025 - Present</span><br/><br/>
+                    
+                    <span class="text-cyan-400">[TASK]</span> Loading primary responsibilities...<br/><br/>
+                    
+                    <span class="text-white">→</span> <span class="text-gray-300">Leading engineering team in designing scalable, reliable, and</span><br/>
+                    <span class="text-gray-300 ml-4">secure systems meeting FedRAMP and IL5 requirements</span><br/><br/>
+                    
+                    <span class="text-white">→</span> <span class="text-gray-300">Representing team during on-site client workshops for</span><br/>
+                    <span class="text-gray-300 ml-4">GovCloud Management plane architecture solutions</span><br/><br/>
+                    
+                    <span class="text-white">→</span> <span class="text-gray-300">Ensuring continuous compliance with defense-in-depth</span><br/>
+                    <span class="text-gray-300 ml-4">security postures across multi-account environments</span><br/><br/>
+                    
+                    <span class="text-white">→</span> <span class="text-gray-300">Developing architecture diagrams for system boundaries,</span><br/>
+                    <span class="text-gray-300 ml-4">data flows, and external service integration points</span><br/><br/>
+                    
+                    <span class="text-cyan-400">[SUCCESS]</span> Role loaded successfully<br/>
+                    <span class="text-cyan-400">[STATUS]</span> Active | Performance: <span class="text-green-400">████████████</span> 100%
+                </div>
+                <div class="flex items-center mt-4">
+                    <span class="text-green-500">kyle@cloudops</span>
+                    <span class="text-white">:</span>
+                    <span class="text-blue-500">~</span>
+                    <span class="text-white">$ </span>
+                    <span class="inline-block w-2 h-4 bg-gray-400 animate-pulse"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Technical Skills</h2>
+            
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-3 text-gray-200">Amazon Web Services</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">IAM</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">EC2</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">S3</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">RDS</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">VPC</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Transit Gateway</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Route53</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Lambda</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">CloudFormation</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">ECS</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">EKS</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">DynamoDB</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">KMS</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">SSO</span>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-3 text-gray-200">Linux Administration</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Bash Scripting</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Ansible</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">RHEL</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">NGINX</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Systemd</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Networking</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Logging</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Monitoring</span>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-3 text-gray-200">DevOps & Security</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Docker</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Kubernetes</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Terraform</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">GitLab CI/CD</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Jenkins</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Tenable</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Splunk</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Python</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">Ruby</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">GitOps</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">FedRAMP</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">NIST</span>
+                    <span class="skill-badge px-3 py-1 rounded-md text-sm">STIG</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notable Achievements -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Notable Achievements</h2>
+            <div class="space-y-4">
+                <div class="bg-dark p-4 rounded-lg border-l-4 border-blue-500">
+                    <h3 class="font-semibold text-white mb-2">Enterprise Cloud Architecture at McDonald's</h3>
+                    <p class="text-gray-300 text-sm">Orchestrated network management across 70+ AWS accounts using Transit Gateway, facilitating user role access via Amazon SSO through a centralized organization account.</p>
+                </div>
+                <div class="bg-dark p-4 rounded-lg border-l-4 border-blue-500">
+                    <h3 class="font-semibold text-white mb-2">Government Compliance Implementation</h3>
+                    <p class="text-gray-300 text-sm">Deployed net-new management plane environments for FedRAMP Moderate and IL5/DoD environments, including full SecOps tooling stack with Tenable Nessus, Trend Micro, and Splunk.</p>
+                </div>
+                <div class="bg-dark p-4 rounded-lg border-l-4 border-blue-500">
+                    <h3 class="font-semibold text-white mb-2">Automation & Security Enhancement</h3>
+                    <p class="text-gray-300 text-sm">Developed advanced automation scripts in BASH and Python to streamline security assessment tasks, significantly reducing resolution time and improving operational efficiency.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Certifications</h2>
+            <div class="bg-dark p-6 rounded-lg border border-dark">
+                <div class="flex items-center">
+                    <i data-feather="award" class="w-6 h-6 text-blue-500 mr-3"></i>
+                    <div>
+                        <h3 class="font-semibold text-white">Professional Cloud Security Engineer</h3>
+                        <p class="text-gray-400">Google Cloud Platform</p>
                     </div>
                 </div>
-        </section>
-    </main>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-400">Let's Connect</h2>
+            <div class="bg-dark p-6 rounded-lg border border-dark">
+                <p class="text-gray-300 mb-4">
+                    I'm always interested in discussing cloud architecture, DevSecOps practices, and new opportunities in the cloud engineering space.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="https://linkedin.com/in/kylepotter92" target="_blank" rel="noopener noreferrer" 
+                       class="flex items-center text-gray-400 hover:text-blue-500 transition-colors">
+                        <i data-feather="linkedin" class="w-5 h-5 mr-2"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/gotTheByte" target="_blank" rel="noopener noreferrer"
+                       class="flex items-center text-gray-400 hover:text-blue-500 transition-colors">
+                        <i data-feather="github" class="w-5 h-5 mr-2"></i>
+                        GitHub
+                    </a>
+                    <a href="mailto:kylepotter0902@gmail.com" 
+                       class="flex items-center text-gray-400 hover:text-blue-500 transition-colors">
+                        <i data-feather="mail" class="w-5 h-5 mr-2"></i>
+                        Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="py-8 border-t border-dark">
+    <footer class="py-8 border-t border-dark mt-auto">
         <div class="max-w-7xl mx-auto px-4 text-center text-gray-400">
-            © 2024 · Built with HTML and Tailwind CSS
+            © 2024 Kyle Potter · Built with HTML and Tailwind CSS
         </div>
     </footer>
 
@@ -184,4 +327,3 @@
     </script>
 </body>
 </html>
-
